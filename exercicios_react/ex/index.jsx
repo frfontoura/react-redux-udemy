@@ -1,10 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {Primeiro, Segundo} from './component'
+import Family from './family'
 
-ReactDOM.render(
-    <div>
-        <Primeiro value = 'Primeiro component' />
-        <Segundo value = 'Segundo component' />
-    </div>,
- document.getElementById('app'))
+ReactDOM.render(<Family />, document.getElementById('app'))
