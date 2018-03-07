@@ -1,5 +1,11 @@
 import React from 'react'
 
-export default props => (
+const Primeiro = props => (
     <h1>{props.value}</h1>
 )
+
+const Segundo = props => (
+    <h2>{props.value}</h2>
+)
+
+export {Primeiro, Segundo}
