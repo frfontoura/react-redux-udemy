@@ -22,10 +22,22 @@ export function update(values) {
     return submit(values, 'put')
 }
 
+export function remove(values) {
+    return submit(values, 'delete')
+}
+
 export function showUpdate(bc) {
     return [
         showTabs('tabUpdate'),
         selectTab('tabUpdate'),
+        initialize('billingCycleForm', bc)
+    ]
+}
+
+export function showDelete(bc) {
+    return [
+        showTabs('tabDelete'),
+        selectTab('tabDelete'),
         initialize('billingCycleForm', bc)
     ]
 }
